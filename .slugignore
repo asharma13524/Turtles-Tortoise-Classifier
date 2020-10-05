@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-#pkl file
-*.pkl
-
 # vscode
 *.vscode
 
