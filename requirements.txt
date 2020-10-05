@@ -41,7 +41,7 @@ soupsieve==2.0.1
 spacy==2.3.2
 srsly==1.0.2
 thinc==7.4.1
-torchvision==0.7.0
+https://download.pytorch.org/whl/cpu/torch-1.6.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
 tqdm==4.50.0
 urllib3==1.25.10
 wasabi==0.8.0
