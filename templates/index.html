@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="title">
+    <h1>Deep Learning Classifier!</h1>
+    <h3>Please submit a picture of a turtle or tortoise.</h3>
+</div>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    {{ form.csrf_token}}
+
+    <div class="form-field-upload">
+        {{ form.picture.label }} {{ form.picture }}
+    </div>
+    {% if form.picture.errors %}
+        {% for error in form.picture.errors %}
+            <div> {{ error }} </div>
+        {% endfor %}
+    {% endif %}
+    <div class="submit-button">
+        {{ form.submit }}
+    </div>
+
+</form>
+
+
+{% endblock %}
